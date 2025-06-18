@@ -45,7 +45,7 @@ Hledání cesty mezi dvěma vrcholy v grafu tak, aby součet vah hran byl minim�
   - S prioritní frontou (např. binární haldou): **O((V + E) log V)**
   - S maticí sousednosti: **O(V²)**
 
-### b) Bellman-Fordův algoritmus
+### b)  Bellman-Fordův algoritmus
 - **Princip**: Opakovaná **relaxace hran**, typicky až **(V−1)** krát, kde `V` je počet vrcholů.
 - **Výhoda**: Funguje i s negativními hranami.
 - **Detekce záporných cyklů**: Po poslední iteraci lze zjistit, zda existuje cyklus se zápornou délkou.
@@ -64,7 +64,3 @@ Hledání cesty mezi dvěma vrcholy v grafu tak, aby součet vah hran byl minim�
 - Grafy slouží k modelování vztahů mezi objekty.
 - Neexistuje univerzální algoritmus pro všechny situace – výběr záleží na typu grafu a požadavcích (rychlost, negativní hrany, počet vrcholů).
 - Porozumění datové reprezentaci grafu je klíčové pro správnou implementaci.
-
-### Možnosti rozšíření
-- **A\*** – heuristický algoritmus vhodný pro cesty v mapách.
-- **Johnsonův algoritmus** – efektivní pro hledání nejkratších cest mezi všemi dvojicemi vrcholů i v přítomnosti negativních hran.
